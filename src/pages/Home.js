@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div>Your Favorite Movies</div>
+    <div>Welcome to the Movie App!</div>
   )
 }

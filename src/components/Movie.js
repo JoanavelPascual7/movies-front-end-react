@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Movie({ movie, index }) {
+function Movie({ movie }) { // Remove "index" from destructuring
   return (
     <tr className="movie">
       <td>{movie.id}</td>

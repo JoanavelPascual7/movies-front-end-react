@@ -7,7 +7,7 @@ export default function NavBar() {
         <Link to="/Movies">Movies</Link>
       </h1>
       <button>
-        <Link to="/Movies/new">New Movie</Link>
+        <Link to="/Movies/new">Add a Favorite Movie</Link>
       </button>
     </nav>
   );
