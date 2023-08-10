@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import the Link component
 
 function MovieDetail() {
   const { id } = useParams();
@@ -29,6 +30,7 @@ function MovieDetail() {
           <p>Length: {movie.length}</p>
           <p>Year: {movie.year}</p>
           <p>Favorite: {movie.is_favorite ? 'Yes' : 'No'}</p>
+          <Link to={`/movies/${id}/edit`}>Edit</Link>
         </div>
       ) : (
         <p>Loading movie details...</p>
