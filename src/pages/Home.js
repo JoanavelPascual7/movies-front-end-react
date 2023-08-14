@@ -1,11 +1,12 @@
 import React from 'react';
 import movieClubImage from "../movies-logo-two.png";
+import "./Home.css";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to the Movie App!</h1>
-      <img src={movieClubImage} alt="Movie Club" />
+    <div className="movie-container">
+      <p className='home-page-title'>Welcome to the Movie App!</p>
+      <img src={movieClubImage} className="movie-club" alt="Movie Club" />
     </div>
   );
 }

@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
+import "./MovieEditForm.css"
+
+
 export default function MovieEditForm() {
   const { id } = useParams();
   const [formData, setFormData] = useState({

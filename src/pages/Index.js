@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Movie from "../components/Movies"; // Import the Movie component
+import Movie from "../components/Movies";
+
+import "./Index.css"
 
 function Index() {
   const [movies, setMovies] = useState([]);
@@ -18,8 +20,8 @@ function Index() {
   }, []);
 
   return (
-    <div>
-      <h1> Index </h1>
+    <div className="index-container">
+      <h1> List of Movies </h1>
       <table>
         <thead>
           {/* Your table header */}

@@ -1,0 +1,16 @@
+body {
+    font-family: 'Delicious Handrawn', cursive;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .index-container {
+    padding-top: 120px; 
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  

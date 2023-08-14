@@ -1,0 +1,55 @@
+body {
+    font-family: 'Delicious Handrawn', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .movie-container {
+    position: relative;
+    width: 100vw;
+    text-align: center;
+  }
+  
+  p.home-page-title {
+    font-size: 6.5vw;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  
+    /* Add a black outline */
+    text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
+  
+    /* Add a bright white glow */
+    &:before,
+    &:after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: white;
+      z-index: -1;
+    }
+    &:before {
+      text-shadow: -4px -4px 16px rgba(255, 255, 255, 0.6);
+    }
+    &:after {
+      text-shadow: 4px 4px 16px rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  .movie-club {
+    border: 3px solid #ddd;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+    max-width: 100%;
+    height: auto;
+    width: 100vw;
+    z-index: 1;
+  }
+  
