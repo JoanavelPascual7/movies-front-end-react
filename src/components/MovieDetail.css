@@ -17,7 +17,7 @@
   
   .MovieDetail h3 {
     margin-top: 0;
-    color: #007bff;
+    color: #6d1dbf;
   }
   
   .MovieDetail p {
@@ -26,26 +26,31 @@
     margin: 12px 0;
   }
   
-  .MovieDetail .favorite {
-    color: #e74c3c;
-    font-weight: bold;
+  .MovieDetail .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 10px; 
   }
   
-  .MovieDetail .edit-button {
+  .MovieDetail .edit-button,
+  .MovieDetail .delete-button {
+    flex: 1;
     display: inline-block;
-    padding: 10px 15px;
-    background-color: #007bff;
+    padding: 10px 0;
+    background-color: #9127e4;
     color: #fff;
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
   }
   
-  .MovieDetail .edit-button:hover {
-    background-color: #0056b3;
+  .MovieDetail .edit-button:hover,
+  .MovieDetail .delete-button:hover {
+    background-color: #6d1dbf; /* Darker shade on hover */
   }
-  
   

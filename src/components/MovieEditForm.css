@@ -33,7 +33,7 @@
   
   .MovieEditForm button[type="submit"] {
     padding: 10px 15px;
-    background-color: #007bff;
+    background-color:#9127e4;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -42,6 +42,6 @@
   }
   
   .MovieEditForm button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color:  #7a1cc9;
   }
   

@@ -59,42 +59,42 @@ export default function MovieEditForm() {
     <div className="MovieEditForm">
       <h2>Edit Movie</h2>
       <form onSubmit={handleSubmit}>
-        <label>Title:</label>
+        <label className='label-font'>Title:</label>
         <input
           type="text"
           name="title"
           value={formData.title}
           onChange={handleInputChange}
         />
-        <label>Director:</label>
+        <label className='label-font' >Director:</label>
         <input
           type="text"
           name="director"
           value={formData.director}
           onChange={handleInputChange}
         />
-        <label>Genre:</label>
+        <label className='label-font' >Genre:</label>
         <input
           type="text"
           name="genre"
           value={formData.genre}
           onChange={handleInputChange}
         />
-        <label>Length:</label>
+        <label className='label-font' >Length:</label>
         <input
           type="text"
           name="length"
           value={formData.length}
           onChange={handleInputChange}
         />
-        <label>Year:</label>
+        <label className='label-font' >Year:</label>
         <input
           type="text"
           name="year"
           value={formData.year}
           onChange={handleInputChange}
         />
-        <button type="submit">Update Movie</button>
+        <button className='submit-button' type="submit">Update Movie</button>
       </form>
     </div>
   );

@@ -39,7 +39,7 @@
   
   .movie-list-page td:last-child a {
     padding: 8px 12px;
-    background-color: #007bff;
+    background-color: #9127e4; /* Darkish purple color */
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -48,7 +48,7 @@
   }
   
   .movie-list-page td:last-child a:hover {
-    background-color: #0056b3;
+    background-color: #7a1cc9; /* Darker shade on hover */
   }
   
   .movie-list-page img {
