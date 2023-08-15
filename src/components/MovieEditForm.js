@@ -4,16 +4,16 @@ import { useParams } from 'react-router-dom';
 
 import "./MovieEditForm.css"
 
-
 export default function MovieEditForm() {
   const { id } = useParams();
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     title: '',
     director: '',
     genre: '',
     length: '',
     year: '',
-  });
+  };
+  const [formData, setFormData] = useState(initialFormData);
 
   useEffect(() => {
     axios
@@ -48,7 +48,7 @@ export default function MovieEditForm() {
       .put(`${process.env.REACT_APP_API_URL}/movies/${id}`, formData)
       .then((response) => {
         console.log('Movie updated:', response.data);
-        // Optionally, navigate to the movie's details page or another appropriate route
+        setFormData(initialFormData);
       })
       .catch((error) => {
         console.error('API Error:', error);
