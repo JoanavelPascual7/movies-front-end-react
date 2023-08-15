@@ -5,12 +5,19 @@ body {
   }
   
   .index-container {
-    padding-top: 225px; 
+    padding-top: 225px;
   }
   
   h1 {
     font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
+  }
+  
+  .show-title {
+    font-size: 80px;
+    text-align: center;
+    color: #000; /* Black font color */
+    text-shadow: 4px 4px 16px #9127e4, 2px 2px 0 #fff; /* Purple shadow with white outline */
   }
   

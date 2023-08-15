@@ -21,7 +21,7 @@ function Index() {
 
   return (
     <div className="index-container">
-      <h1> List of Movies </h1>
+      <h1 className='show-title'> List of Movies </h1>
       <table>
         <thead>
           {/* Your table header */}
